@@ -26,19 +26,6 @@ def print_data():
                     "\n3 -> Выбор всего списка заметок"
                     "\nВыбор -> "))
     if inp == 1:
-        # date = int(input("Введите дату для вывода заметки в консоль -> "))
-        # with open("note.csv", 'r', encoding="utf-8") as f:
-        #     note = f.readlines()
-        #     note_dict = {}
-        #     key = 1
-        #     for i in range(len(note)):
-        #         if note[i] != '\n':
-        #             note_dict[key] = note[i] + '\n'
-        #             key += 1
-        #     list_with_date = []
-        #     [list_with_date.append(note) for note in dict.keys() if date in dict.keys()]
-        #     print(note_dict[inp_index])
-
         date = input("Введите дату для вывода заметки в консоль -> ")
         with open("note.csv", 'r', encoding="utf-8") as f:
             note_list = f.readlines()
